@@ -58,16 +58,16 @@
 	<!-- <h1>Places</h1> -->
 	<article>
 	  <div class="title_box">
-	    <h2>{{ place.name }}</h2>
-	    <div class="price_by_night">${{ place.price_by_night }}</div>
+	    <h2>{{ places.name }}</h2>
+	    <div class="price_by_night">${{ places.price_by_night }}</div>
 	  </div>
 	  <div class="information">
-	    <div class="max_guest">{{ place.max_guest }}</div>
-	    <div class="number_rooms">{{ place.number_rooms }}</div>
-            <div class="number_bathrooms">{{ place.number_bathrooms }}</div>
+	    <div class="max_guest">{{ places.max_guest }}</div>
+	    <div class="number_rooms">{{ places.number_rooms }}</div>
+            <div class="number_bathrooms">{{ places.number_bathrooms }}</div>
 	  </div>
           <div class="description">
-	    {{ place.description | safe }}
+	    {{ places.description | safe }}
           </div>
 	</article>
       </section>
