@@ -1,12 +1,15 @@
 $(document).ready(function () {
   const amenityID = {};
+
   $('input[type="checkbox"]').change(function() {
-    const id = $(this).data('amenity_id');
+    const id = $(this).data('id');
+
     if ($(this).prop('checked')) {
-      amenityId[id] = true;
+      amenityID[id] = true;
     } else {
-      delete amenityId[id];
+      delete amenityID[id];
     }
-    $('amenities').text(amenityId);
+    const amenityList = Object.values(amenityID).join(', ');
+    $('amenities').text(amenityList);
   });
 });
